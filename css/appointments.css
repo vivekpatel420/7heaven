@@ -1,0 +1,119 @@
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    color: #0b6fa4;
+    font-size: 32px;
+    margin-bottom: 6px;
+}
+
+.page-header p {
+    color: #666;
+    font-size: 16px;
+}
+
+.table-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+th {
+    background: #0b6fa4;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+td {
+    padding: 13px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background: #f7fbfd;
+}
+
+/* Status */
+
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.approved {
+    background: #d4edda;
+    color: #155724;
+}
+
+.rejected {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* Action buttons */
+
+.actions {
+    white-space: nowrap;
+}
+
+.actions a {
+    display: inline-block;
+    padding: 7px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.approve {
+    background: #28a745;
+}
+
+.approve:hover {
+    background: #218838;
+}
+
+.reject {
+    background: #dc3545;
+}
+
+.reject:hover {
+    background: #c82333;
+}
+
+.delete {
+    background: #343a40;
+}
+
+.delete:hover {
+    background: #1d2124;
+}
+
+.no-data {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+}

@@ -1,0 +1,273 @@
+/* =========================================
+   MEDICARE NAVBAR
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    height: 78px;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    display: flex;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+    border-bottom: 1px solid #e8eef2;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.navbar-container {
+    width: 90%;
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: #0878ad;
+}
+
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+
+    background: #e8f7fc;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+
+    box-shadow: 0 4px 12px rgba(8, 120, 173, 0.12);
+}
+
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1;
+}
+
+
+.logo-text strong {
+    font-size: 24px;
+    font-weight: 800;
+
+    letter-spacing: 0.3px;
+}
+
+
+.logo-text small {
+    color: #71818a;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   NAV LINKS
+========================================= */
+
+.nav-links {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.nav-item {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 11px 14px;
+
+    text-decoration: none;
+
+    color: #35434b;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    border-radius: 10px;
+
+    transition: all 0.3s ease;
+}
+
+
+.nav-item span {
+    font-size: 16px;
+}
+
+
+.nav-item:hover {
+    background: #edf8fc;
+
+    color: #0878ad;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   ACTIVE EFFECT
+========================================= */
+
+.nav-item.active {
+    background: #e8f7fc;
+
+    color: #0878ad;
+}
+
+
+/* =========================================
+   PATIENT LOGIN BUTTON
+========================================= */
+
+.patient-login {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-left: 12px;
+
+    padding: 12px 20px;
+
+    border-radius: 25px;
+
+    background: linear-gradient(
+        135deg,
+        #0878ad,
+        #075c86
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 6px 15px rgba(8, 120, 173, 0.25);
+
+    transition: all 0.3s ease;
+}
+
+
+.patient-login:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 9px 22px rgba(8, 120, 173, 0.35);
+
+    background: linear-gradient(
+        135deg,
+        #096f9f,
+        #044c70
+    );
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 15px 0;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .logo-text strong {
+        font-size: 21px;
+    }
+
+    .nav-links {
+        gap: 5px;
+    }
+
+    .nav-item {
+        font-size: 13px;
+
+        padding: 9px;
+    }
+
+    .patient-login {
+        margin-left: 0;
+
+        padding: 10px 15px;
+    }
+
+}

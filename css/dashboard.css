@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef3f8;
+}
+
+/*==========================
+    Main Layout
+==========================*/
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/*==========================
+      Sidebar
+==========================*/
+
+.sidebar{
+    width:240px;
+    background:#0b6fa4;
+    color:white;
+    padding:20px;
+    position:fixed;
+    left:0;
+    top:0;
+    height:100vh;
+}
+
+.sidebar h2{
+    font-size:24px;
+    text-align:center;
+    margin-bottom:35px;
+
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    margin:8px 0;
+    border-radius:8px;
+    font-size:16px;
+    transition:.3s;
+
+}
+
+.sidebar a:hover{
+    background:#085b85;
+    padding-left:22px;
+}
+
+/*==========================
+      Content
+==========================*/
+
+.content{
+    flex:1;
+    margin-left:240px;
+    padding:30px;
+}
+
+/*==========================
+      Header
+==========================*/
+
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.dashboard-header h1{
+    font-size:24px;
+    color:#0b6fa4;
+    margin-bottom:5px;
+}
+
+.dashboard-header p{
+    font-size:16px;
+    color:#666;
+}
+
+.date{
+    background:white;
+    padding:15px 25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    font-size:18px;
+    font-weight:bold;
+}
+
+/*==========================
+      Dashboard Cards
+==========================*/
+
+.dashboard-cards{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(250px, 350px));
+    gap:20px;
+    justify-content:start;
+}
+
+.dashboard-card{
+
+    background:white;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.dashboard-card .icon{
+    font-size:36px;
+    margin-bottom:10px;
+}
+
+.dashboard-card h3{
+
+    color:#0b6fa4;
+    font-size:30px;
+    margin-bottom:15px;
+
+}
+
+.dashboard-card h2{
+    font-size:36px;
+    color:#222;
+}
+
+/*==========================
+      Old Cards (Other Pages)
+==========================*/
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+
+}
+
+.card{
+
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.card h2{
+
+    color:#0b6fa4;
+
+}
+
+/*==========================
+      Responsive
+==========================*/
+
+@media(max-width:900px){
+
+.sidebar{
+
+    width:220px;
+
+}
+
+.content{
+
+    margin-left:220px;
+
+}
+
+.dashboard-cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.dashboard-header{
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+
+}
+
+}

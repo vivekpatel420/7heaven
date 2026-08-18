@@ -1,0 +1,365 @@
+/* =========================================
+   PATIENT BILLING
+========================================= */
+
+.patient-billing-page {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.billing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.billing-label {
+    color: #0879b1;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.billing-header h1 {
+    color: #172033;
+    font-size: 32px;
+    margin: 6px 0;
+}
+
+.billing-header p {
+    color: #73808c;
+    font-size: 15px;
+}
+
+.patient-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 11px 18px;
+    border-radius: 12px;
+    color: #0879b1;
+    font-weight: 600;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+}
+
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+.patient-billing-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.billing-summary-card {
+    background: white;
+    border-radius: 15px;
+    padding: 22px;
+    border: 1px solid #edf1f5;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.billing-summary-card:hover {
+    transform: translateY(-4px);
+}
+
+.summary-icon {
+    width: 52px;
+    height: 52px;
+    background: #e6f5fb;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.paid-icon {
+    background: #e6f8ed;
+}
+
+.pending-icon {
+    background: #fff3db;
+}
+
+.billing-summary-card p {
+    color: #788692;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.billing-summary-card h2 {
+    color: #172033;
+    font-size: 26px;
+}
+
+
+/* =========================================
+   BILL CARD
+========================================= */
+
+.patient-bills-card {
+    background: white;
+    border-radius: 17px;
+    padding: 28px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.06);
+}
+
+.card-heading {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #edf1f5;
+}
+
+.card-heading h2 {
+    color: #172033;
+    font-size: 22px;
+}
+
+.card-heading p {
+    color: #7b8791;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   BILL ITEM
+========================================= */
+
+.bills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bill-item {
+    display: grid;
+    grid-template-columns: 58px 1fr auto;
+    gap: 18px;
+    align-items: center;
+
+    padding: 20px;
+
+    border: 1px solid #e9eef2;
+    border-radius: 13px;
+
+    transition: 0.3s;
+}
+
+.bill-item:hover {
+    background: #f8fbfd;
+    border-color: #dcecf3;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   BILL ICON
+========================================= */
+
+.bill-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #e8f5fb;
+
+    font-size: 26px;
+}
+
+
+/* =========================================
+   DETAILS
+========================================= */
+
+.bill-details h3 {
+    color: #17324d;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.bill-details p {
+    color: #71818d;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.bill-details p span {
+    margin: 0 5px;
+}
+
+.bill-details .description {
+    color: #5e7180;
+}
+
+
+/* =========================================
+   PAYMENT
+========================================= */
+
+.bill-payment {
+    text-align: right;
+    min-width: 130px;
+}
+
+.bill-amount {
+    color: #17324d;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.bill-status {
+    display: inline-block;
+    padding: 5px 11px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.bill-status.paid {
+    background: #e5f8ed;
+    color: #16834b;
+}
+
+.bill-status.pending {
+    background: #fff3d5;
+    color: #9d6800;
+}
+
+.bill-status.cancelled {
+    background: #ffe8e8;
+    color: #c62828;
+}
+
+.bill-payment small {
+    display: block;
+    color: #8a959d;
+    margin-top: 6px;
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.no-bills {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.no-bills-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.no-bills h2 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.no-bills p {
+    color: #777;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .patient-billing-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .billing-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .billing-header h1 {
+        font-size: 27px;
+    }
+
+    .patient-box {
+        width: 100%;
+    }
+
+    .patient-billing-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .patient-bills-card {
+        padding: 18px;
+    }
+
+    .bill-item {
+        grid-template-columns: 50px 1fr;
+        gap: 12px;
+    }
+
+    .bill-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+
+    .bill-payment {
+        grid-column: 1 / -1;
+        text-align: left;
+        padding-top: 12px;
+        border-top: 1px solid #edf1f5;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .patient-bills-card {
+        padding: 15px;
+    }
+
+    .bill-item {
+        padding: 15px;
+    }
+
+    .bill-amount {
+        font-size: 20px;
+    }
+
+}

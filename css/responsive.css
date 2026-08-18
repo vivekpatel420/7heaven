@@ -1,0 +1,135 @@
+/* =====================================================
+   7 HEAVEN HOSPITAL - GLOBAL RESPONSIVE CSS
+   Public + Patient side only
+   ===================================================== */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { max-width: 100%; overflow-x: hidden; }
+img, video { max-width: 100%; height: auto; }
+iframe { max-width: 100%; }
+input, select, textarea, button { max-width: 100%; }
+
+/* Prevent common fixed-width layouts from overflowing */
+.container, .appointment-container, .appointment-wrapper,
+.main-container, .content-wrapper { max-width: 100%; }
+
+/* =============================
+   TABLET
+============================= */
+@media (max-width: 900px) {
+    .navbar { height: auto; padding: 14px 0; }
+    .navbar-container { width: calc(100% - 30px); flex-direction: column; gap: 14px; }
+    .nav-links { width: 100%; justify-content: center; flex-wrap: wrap; }
+
+    .hero { min-height: auto; padding: 70px 30px; }
+    .hero-image { margin-top: 35px; }
+    .features { grid-template-columns: repeat(2, 1fr) !important; }
+    .service-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .about { grid-template-columns: 1fr !important; gap: 35px; padding: 60px 30px !important; }
+
+    .doctors-grid, .doctor-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    .contact-container, .contact-grid { grid-template-columns: 1fr !important; }
+
+    .appointment-wrapper { padding: 30px 22px; }
+    .form-grid { grid-template-columns: 1fr 1fr; }
+
+    .patient-layout, .dashboard-layout { width: 100%; }
+}
+
+/* =============================
+   MOBILE
+============================= */
+@media (max-width: 700px) {
+    body { font-size: 15px; }
+
+    /* Navbar: clean stacked mobile layout */
+    .navbar-container { width: calc(100% - 24px); }
+    .logo-text strong { font-size: 21px; }
+    .nav-links { gap: 5px; }
+    .nav-item { padding: 9px 10px; font-size: 13px; }
+    .patient-login { margin-left: 0; padding: 10px 15px; }
+
+    /* Hero */
+    .hero { padding: 50px 18px; text-align: center; }
+    .hero h1 { font-size: clamp(30px, 9vw, 42px); line-height: 1.15; }
+    .hero p { font-size: 15px; line-height: 1.65; }
+    .hero-buttons { flex-direction: column !important; align-items: stretch !important; gap: 12px; }
+    .hero-buttons a, .hero-btn, .primary-btn, .secondary-btn { width: 100%; text-align: center; }
+    .hero-image { width: 100%; }
+    .doctor-circle { margin: auto; }
+    .floating-card { position: static !important; width: min(100%, 280px); margin: 12px auto 0; }
+
+    /* Sections */
+    .features, .service-grid, .services-grid, .cards,
+    .doctors-grid, .doctor-grid { grid-template-columns: 1fr !important; }
+    .features { padding: 35px 18px !important; }
+    .services { padding: 45px 18px !important; }
+    .about { padding: 45px 18px !important; }
+    .section-heading h2, .section-heading h1 { font-size: 28px !important; }
+    .about-content h2 { font-size: 30px !important; }
+
+    /* CTA / footer */
+    .cta { flex-direction: column !important; text-align: center; gap: 20px; padding: 35px 20px !important; }
+    .cta a { width: 100%; text-align: center; }
+    footer { padding: 25px 15px !important; text-align: center; }
+    footer p { line-height: 1.6; font-size: 13px; }
+
+    /* Login/register */
+    .login-container, .register-container { min-height: 100vh; height: auto !important; padding: 25px 15px; }
+    .login-box, .register-box { width: 100% !important; max-width: 440px; margin: auto; padding: 25px 18px !important; }
+    .login-box h2, .register-box h2 { font-size: 24px; }
+    .login-box button, .register-box button { width: 100%; }
+
+    /* Appointment */
+    .appointment-wrapper { padding: 22px 14px; }
+    .appointment-header { flex-direction: column; align-items: stretch; gap: 15px; }
+    .appointment-header h1 { font-size: 27px; }
+    .patient-name { width: 100%; text-align: center; }
+    .appointment-card { padding: 22px 16px !important; border-radius: 14px; }
+    .card-title { align-items: flex-start; gap: 10px; }
+    .card-title h2 { font-size: 19px; }
+    .form-grid { grid-template-columns: 1fr !important; gap: 17px; }
+    .form-group.full { grid-column: auto !important; }
+    .availability-info { overflow-wrap: anywhere; }
+    .form-footer { flex-direction: column; align-items: stretch; }
+    .book-btn, .cancel-btn { width: 100%; text-align: center; }
+
+    /* Patient dashboard */
+    .sidebar { position: relative !important; width: 100% !important; height: auto !important; min-height: 0 !important; }
+    .sidebar nav { display: flex; flex-wrap: wrap; gap: 6px; }
+    .sidebar nav a { flex: 1 1 45%; min-width: 135px; }
+    .main { width: 100% !important; margin-left: 0 !important; padding: 18px !important; }
+    .topbar { flex-direction: column; align-items: flex-start !important; gap: 14px; }
+    .user-box { width: 100%; }
+    .welcome-box { flex-direction: column; text-align: center; padding: 22px 16px !important; }
+    .stats { grid-template-columns: 1fr !important; }
+    .stat-card { width: 100%; }
+
+    /* Tables */
+    .table-card, .table-container { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    table { min-width: 650px; }
+}
+
+/* =============================
+   SMALL PHONES
+============================= */
+@media (max-width: 420px) {
+    .navbar-container { width: calc(100% - 18px); }
+    .logo-text strong { font-size: 19px; }
+    .nav-links { flex-direction: column; width: 100%; }
+    .nav-item, .patient-login { width: 100%; justify-content: center; text-align: center; }
+
+    .hero { padding: 38px 14px; }
+    .hero h1 { font-size: 29px; }
+    .hero p { font-size: 14px; }
+
+    .login-box, .register-box { padding: 22px 15px !important; }
+    .appointment-wrapper { padding: 18px 10px; }
+    .appointment-header h1 { font-size: 24px; }
+    .appointment-card { padding: 18px 13px !important; }
+    .title-icon { width: 45px; height: 45px; font-size: 22px; flex: 0 0 45px; }
+
+    .sidebar nav a { flex: 1 1 100%; min-width: 0; }
+    .main { padding: 14px !important; }
+}

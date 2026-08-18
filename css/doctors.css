@@ -1,0 +1,440 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f9fc;
+    color: #183b53;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.doctors-hero {
+    width: 100%;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #eaf7fc, #f7fbfd);
+    text-align: center;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero-label {
+    display: inline-block;
+    color: #087db3;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    color: #183b53;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    font-weight: 800;
+}
+
+.hero-content p {
+    max-width: 700px;
+    margin: auto;
+    color: #708493;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   DOCTORS SECTION
+========================================= */
+
+.doctors-section {
+    width: 100%;
+    padding: 80px 6%;
+    background: #f4f9fc;
+}
+
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.section-title {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-title span {
+    color: #087db3;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    color: #183b53;
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.section-title p {
+    color: #748795;
+    font-size: 17px;
+}
+
+
+/* =========================================
+   DOCTOR GRID
+========================================= */
+
+.doctor-grid {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================
+   DOCTOR CARD
+========================================= */
+
+.doctor-card {
+    width: 100%;
+    background: #ffffff;
+
+    padding: 40px 25px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    border: 1px solid #edf3f6;
+
+    box-shadow: 0 10px 30px rgba(20, 75, 100, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 18px 40px rgba(20, 75, 100, 0.15);
+}
+
+
+/* =========================================
+   AVATAR
+========================================= */
+
+.doctor-avatar {
+    width: 115px;
+    height: 115px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: #e5f5fc;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 55px;
+
+    border: 7px solid #f4fbfe;
+}
+
+
+/* =========================================
+   NAME
+========================================= */
+
+.doctor-card h3 {
+    color: #183b53;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================================
+   SPECIALIZATION
+========================================= */
+
+.specialization {
+    color: #087db3;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   PHONE
+========================================= */
+
+.doctor-info {
+    color: #758895;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.appointment-btn {
+    display: inline-block;
+
+    background: #087db3;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 13px 22px;
+
+    border-radius: 9px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.appointment-btn:hover {
+    background: #075f89;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   NO DOCTORS
+========================================= */
+
+.no-doctors {
+    grid-column: 1 / -1;
+
+    background: white;
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.no-doctor-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.no-doctors h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.no-doctors p {
+    color: #7a8b96;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.doctor-cta {
+    width: calc(100% - 12%);
+    max-width: 1250px;
+
+    margin: 0 auto 80px;
+
+    padding: 45px 50px;
+
+    border-radius: 22px;
+
+    background: linear-gradient(
+        135deg,
+        #087db3,
+        #0b9acb
+    );
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+.doctor-cta span {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.doctor-cta h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.doctor-cta p {
+    font-size: 15px;
+}
+
+.doctor-cta a {
+    background: white;
+
+    color: #087db3;
+
+    padding: 14px 24px;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.doctor-cta a:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background: #123448;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 30px 20px;
+}
+
+.footer strong {
+    display: block;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #b9cbd5;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .doctor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .doctors-hero {
+        padding: 55px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .doctors-section {
+        padding: 55px 18px;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    .doctor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-card {
+        padding: 35px 20px;
+    }
+
+    .doctor-cta {
+        width: calc(100% - 36px);
+
+        margin: 20px 18px 50px;
+
+        padding: 35px 25px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .doctor-cta h2 {
+        font-size: 25px;
+    }
+
+    .doctor-cta a {
+        width: 100%;
+        text-align: center;
+    }
+
+}
