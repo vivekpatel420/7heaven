@@ -9,7 +9,7 @@
     <a href="availability.php"> 🕐 Doctor Availability</a>
     <a href="appointments.php">📅 Appointments</a>
     <a href="billing.php">💰 Billing</a>
-    <a href="../logout.php">🚪 Logout</a>
+    <a href="logout.php">🚪 Logout</a>
 </div>
 
 
